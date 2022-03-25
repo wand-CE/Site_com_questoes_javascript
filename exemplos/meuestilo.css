@@ -1,0 +1,16 @@
+        h1{
+            background-color: rebeccapurple;
+            border: 1px solid blue;
+            width: 70%;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 18pt;
+        }
+        .mult3{
+            font-size: 24pt;
+            color: darkred;
+        }
+        #especial{
+            background-color: antiquewhite;
+        }
