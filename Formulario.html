@@ -7,53 +7,105 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Formulário de Inscrição</h1>
+    <style>
+        fieldset{
+            width:50%;
+        }
+        input:not(#masc):not(#fem){
+            width:50%;
+        }
+    </style>
+    <h1>Formulário de Inscrição em Evento</h1>
     <form action="" method="get">
         <fieldset>
+      &emsp;
        <label>Nome completo:</label>
       <input type="name" name="name" id="name" placeholder="Digite seu nome">
       <br><br>
+      &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
       <label for="email">E-mail:</label>
       <input type="email" id="email" name="email" placeholder="ex: myname@example.com">
       <br><br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;
       <label for="sexo">Sexo:</label>
+      <input type="radio" name="sexo" value="M" id="masc" >      
       <label for="masc">Masculino</label>
-      <input type="radio" name="sexo" value="M" id="masc" >
-         <label for="fem">Feminino</label>
       <input type="radio" name="sexo" value="F" id="fem">
+      <label for="fem">Feminino</label>
       <br><br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;
       <label>Cargo:</label>
       <input type="text" name="Cargo" id="Cargo" >
       <br><br>
+      &emsp;&emsp;&emsp;
       <label>Nascimento:</label>
       <input type="date" name="Cargo" id="Cargo" >
       <br><br>
+      &emsp;&emsp;&emsp;&emsp;
       <label>Telefone:</label>
       <input type="tel" size="15" name="Telefone"  id="Telefone" >
       <br><br>
     </fieldset>
     <h2>Informações da Instituição</h2>
     <p>Preencha os campos abaixo com as informações da empresa em que trabalha</p>
-    <fieldset>
+    <fieldset >
+        &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
         <label for="empresa">Empresa: </label>
         <input type="text" name="empresa" id="empresa">
         <br><br>
         <label for="end">Endereço Completo: </label>
         <input type="text" name="end" id="end">
         <br><br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;
         <label for="Cidade">Cidade: </label>
         <input type="text" name="cidade" id="cidade">
-        <br><br>
-        
-    </fieldset>
-      <label for="mensagem">Escreva uma mensagem</label>
-      <textarea id="mensagem" name="mensagem" rows="10" cols="20" placeholder="Sua mensagem aqui..."></textarea>
-      
-      <input type="submit" value="Enviar"> &nbsp;&nbsp;
-      <input type="reset" value="Limpar">
+        <br><br>     
+        &emsp;&emsp;&emsp;&emsp;&emsp;
+        <label for="estado">Estado: </label>
+        <select name="Estado">      
+            <option value="Selecione: " selected>Selecione</option>
+            <option value="AC: " >Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>            
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>            
+         </select>
+        <br><br>     
+        <label for="Funci">Quant. Funcionários: </label>
+        <input type="number" name="cidade" id="cidade">
+        <br><br>    
+        &emsp;&emsp;&emsp;
+        <label for="mensagem"> Observações: </label>
+        <textarea id="mensagem" name="mensagem" width="1000" height="1020" placeholder="Sua mensagem aqui..."></textarea>      
+    </fieldset>      
     </form>
-    <label>Brasileiro Nato?
-        <input type="checkbox" name="bras">
-    </label>
+    <br>
+    &emsp;&emsp;&emsp;
+    <label for="recibo">Recibo: <input type="checkbox" name="bras"> Emitir em nome da Instituição.</label>
+    <br><br>
+    &emsp;
+    <input type="submit" value="Fazer inscrição">
 </body>
 </html>
