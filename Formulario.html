@@ -11,7 +11,7 @@
         fieldset{
             width:50%;
         }
-        input:not(#masc):not(#fem){
+        input:not(#masc):not(#fem):not(#inst):not(#submit){
             width:50%;
         }
     </style>
@@ -103,9 +103,9 @@
     </form>
     <br>
     &emsp;&emsp;&emsp;
-    <label for="recibo">Recibo: <input type="checkbox" name="bras"> Emitir em nome da Instituição.</label>
+    <label for="recibo">Recibo: <input type="checkbox" name="Inst" id="inst"> Emitir em nome da Instituição.</label>
     <br><br>
     &emsp;
-    <input type="submit" value="Fazer inscrição">
+    <input id="submit" type="submit" value="Fazer inscrição">
 </body>
 </html>
