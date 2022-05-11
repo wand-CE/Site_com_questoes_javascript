@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão3</title>
+</head>
+<body>
+    <h1 id="titulo">Terceira questão</h1>
+    <script>
+        let nome = prompt("Qual o seu nome? ");
+        let sexo = prompt("Qual o seu sexo?"+"\n"+" F para feminino e M para masculino")        
+        let idade = parseInt(prompt("Qual sua idade? "))
+        let sexo2 = sexo.toUpperCase();
+        if (idade < 25 && sexo2 == "F"){
+            document.write("Nome: "+nome+"<br>"+"Sexo: Feminino"+"<br>"+"Idade: "+idade + "<h3>Situação: </h3> ACEITA")
+        }else{
+            document.write("<h3>Situação: </h3> NÃO ACEITA");
+        }
+    </script>
+</body>
+</html>

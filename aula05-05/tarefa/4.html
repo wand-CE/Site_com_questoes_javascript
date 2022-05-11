@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão4</title>
+</head>
+<body>
+    <h1 id="titulo">Quarta questão</h1>
+    <p id="soma" style="font-size: larger;"></p>
+    <script>        
+        num="a";             
+        soma=0; 
+        while (num!=0){            
+            let num = parseInt(prompt("Digite um número:\nAperte 0 para parar"));    
+            if (num>100 && num<200){ 
+            soma++;   
+            document.write(num+"<br>");
+            }    
+            if (num === 0) break;
+        }    
+        document.getElementById('soma').innerHTML=("A quantidade de números digitados entre 100 e 200 foram: "+soma);              
+    </script>
+</body>
+</html>
