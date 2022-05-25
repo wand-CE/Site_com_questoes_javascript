@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1layout</title>
+    <style>
+        .item1 { grid-area: logo; }
+        .item2 { grid-area: navigation; }
+        .item3 { grid-area: header; }
+        .item4 { grid-area: sidebar; }
+        .item5 { grid-area: body; }
+        .item6 { grid-area: footer; }
+       
+        .grid-container {
+          display: grid;
+          grid-template-columns: 200px 200px 200px;
+          grid-template-rows: auto auto auto 300px auto;
+          grid-template-areas:
+            'logo logo logo'
+            'navigation navigation navigation'
+            'header header header'
+            'sidebar body body'
+            'footer footer footer';
+          gap: 10px;
+          background-color: #2196F3;
+          background-position: center;
+          padding: 10px;          
+        }       
+        .grid-container > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          text-align: center;
+          padding: 20px ;
+          font-size: 30px;          
+        }
+        </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">logo</div>
+        <div class="item2">navigation</div>
+        <div class="item3">header/banner</div>
+        <div class="item4">Side bar</div>
+        <div class="item5">Body area</div>
+        <div class="item6">footer</div>
+    </div>    
+</body>
+</html>
