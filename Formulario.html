@@ -8,11 +8,17 @@
 </head>
 <body>
     <style>
+        form{
+            padding-left: 10px;
+        }
         fieldset{
-            width:50%;
+            width:50%;          
+            margin-left: 5%;
+            font-size: 17px;
         }
         input:not(#masc):not(#fem):not(#inst):not(#submit){
-            width:50%;
+            width:50%;            
+            margin-top: 20px;
         }
         .voltar{
         padding: 15px;
@@ -21,56 +27,60 @@
         text-decoration: none; 
         border-radius: 20px;
         }
+        #mensagem{
+            height: 100px;
+            width: 50%;
+            margin-left: 90px
+        }
+        label{
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
     </style>
     <p><a href="index.html" class="voltar">Página Inicial</a></p>
-    <h1>Formulário de Inscrição em Evento</h1>
     <div>
-    <form>
+        <form>
+            <h1>Formulário de Inscrição em Evento</h1>
         <fieldset>
-      &emsp;
-       <label>Nome completo:</label>
+      <label>Nome completo:</label>
       <input type="name" name="name" id="name" placeholder="Digite seu nome">
-      <br><br>
-      &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
-      <label for="email">E-mail:</label>
+            <br>
+      <label for="email" style="margin-left: 95px;">E-mail:</label>
       <input type="email" id="email" name="email" placeholder="ex: myname@example.com">
-      <br><br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;
-      <label for="sexo">Sexo:</label>
-      <input type="radio" name="sexo" value="M" id="masc" >      
-      <label for="masc">Masculino</label>
-      <input type="radio" name="sexo" value="F" id="fem">
-      <label for="fem">Feminino</label>
-      <br><br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;
-      <label>Cargo:</label>
+            <br><br>
+      <label for="sexo" style="margin-left: 100px;">Sexo:</label>
+
+      <input type="radio" name="sexo" value="M" id="masc" style="margin-left: 0px; "> 
+      <label for="masc" style="margin-left: 0px;">Masculino</label>
+
+      <input type="radio" name="sexo" value="F" id="fem" style="margin-left: 20px;">      
+      <label for="fem" style="margin-left: 0px;">Feminino</label>
+      <br>
+      <label style="margin-left: 95px;">Cargo:</label>
       <input type="text" name="Cargo" id="Cargo" >
-      <br><br>
-      &emsp;&emsp;&emsp;
-      <label>Nascimento:</label>
+      <br>
+      <label style="margin-left: 55px;">Nascimento:</label>
       <input type="date" name="Cargo" id="Cargo" >
-      <br><br>
-      &emsp;&emsp;&emsp;&emsp;
-      <label>Telefone:</label>
-      <input type="tel" size="15" name="Telefone"  id="Telefone" >
-      <br><br>
+      <br>
+      <label style="margin-left: 75px;">Telefone:
+        <input type="tel" size="15" name="Telefone"  id="Telefone" style="margin-bottom: 15px;" >
+      </label>
+
     </fieldset>
     <h2>Informações da Instituição</h2>
     <p>Preencha os campos abaixo com as informações da empresa em que trabalha</p>
-    <fieldset >
-        &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
-        <label for="empresa">Empresa: </label>
+    <fieldset style="margin-bottom: 20px;">
+        <label for="empresa" style="margin-left: 105px;">Empresa: </label>
         <input type="text" name="empresa" id="empresa">
-        <br><br>
-        <label for="end">Endereço Completo: </label>
+        <br>
+        <label for="end" >Endereço Completo: </label>
         <input type="text" name="end" id="end">
-        <br><br>
-        &emsp;&emsp;&emsp;&emsp;&emsp;
-        <label for="Cidade">Cidade: </label>
+        <br>
+        <label for="Cidade" style="margin-left: 120px;">Cidade: </label>
         <input type="text" name="cidade" id="cidade">
-        <br><br>     
-        &emsp;&emsp;&emsp;&emsp;&emsp;
-        <label for="estado">Estado: </label>
+        <br><br>
+        <label for="estado" style="margin-left: 120px;">Estado: </label>
         <select name="Estado">      
             <option value="Selecione: " selected disabled>Selecione</option>
             <option value="AC: " >Acre</option>
@@ -101,19 +111,21 @@
             <option value="SE">Sergipe</option>
             <option value="TO">Tocantins</option>            
          </select>
-        <br><br>     
-        <label for="Funci">Quant. Funcionários: </label>
-        <input type="number" name="cidade" id="cidade">
-        <br><br>    
-        &emsp;&emsp;&emsp;
-        <label for="mensagem"> Observações: </label>
-        <textarea id="mensagem" name="mensagem" width="1000" height="1020" placeholder="Sua mensagem aqui..."></textarea>      
+         <br>
+        <label for="funci" >Quant. Funcionários: </label>
+        <input type="number" name="funci" id="funci" style="margin-bottom: 25px;">
+        <br>
+        <label for="mensagem" style="position: absolute; margin-left: 82px; margin-top: 5px;" > Observações: </label>
+        <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem aqui..." style="margin-left: 185px;margin-top: 5px;"></textarea>
+
     </fieldset>   
-        <br>&emsp;&emsp;&emsp;
-        <label for="recibo">Recibo: <input type="checkbox" name="Inst" id="inst"> Emitir em nome da Instituição.</label>
-        <br><br>&emsp;       
-        <input id="submit" type="submit" value="Fazer inscrição">   
-    </form>    
-</div>
+                <p style="margin-left: 100px;">  Recibo: 
+                <input type="checkbox" name="Inst" id="inst" style="position: absolute;"> 
+                <label for="inst">Emitir em nome da Instituição.</label>
+                <br><br>
+                <input id="submit" type="submit" value="Fazer inscrição" style="margin-bottom: 50px; margin-left: 120px;">           
+            </p>
+        </form>    
+    </div>
 </body>
 </html>
