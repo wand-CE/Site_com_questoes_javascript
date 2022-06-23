@@ -1,0 +1,63 @@
+/*
+#teste{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    position: relative;
+    left: 200px;
+}
+*/
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+#princ{
+    width: 80%;
+    height: 100%;
+    min-width: 320px;
+    margin-left: 10%;
+    border: 2px dotted darkred;
+    position: absolute;
+}
+#header{
+    background-color: blueviolet;
+    height: 10%;
+    min-height: 50px;
+    background: linear-gradient(blue,rgb(192, 225, 255));
+    font-size: 2rem;
+    color: antiquewhite;
+    text-align: center;
+}
+#div1{
+    background-color: bisque;
+}
+#div2{
+    background-color: aquamarine;
+}
+#div3{
+    background-color: brown;
+}
+#div4{
+    background-color: aqua;
+}
+#rodape{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: yellowgreen ;
+    color: blue;
+    width: 100%;
+    height: 10%;
+    min-height: 50px;
+}
+.interna{
+    width: 25%;
+    height: 80%;
+    padding: 0.5em;
+    border: 2px solid black;
+    border-radius: 1em;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    overflow: auto;
+}
