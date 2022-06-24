@@ -20,9 +20,25 @@
             border-radius: 100%;                        
         }
         .tarefas{
-            display: grid;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            grid-gap: 10px;
+            grid-gap: 30px;
+        }
+        .imagem{
+            transition: all 0.5s;            
+            cursor: pointer;
+        }
+
+        .imagem:hover{
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+        .formula{
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .container{
+            gap: 10px;
         }
         
     </style>
@@ -39,35 +55,45 @@
             </p>
         </div>
         </div>
+            <div class="container p-5 bg-secondary mt-3 text-left ">
+                <h3>Quem sou eu?</h3>
+                <p style="font-size: large;">Meu nome é Wanderson Soares dos Santos, estudo Análise e Desenvolvimento de Sistemas no IFRO - Campus Ariquemes, estou finalizando o 1º período</p>  
+                
+            </div>
         <div class="container p-5 bg-secondary mt-3 text-left " style="font-size: xx-large;">
-            Atividades:
-        <div class="tarefas">                        
-            <a href = "Formulario.html" class="btn btn-success" id="formula"> Formulario adad </a> 
-            <a href="exemplos/aulacss.html" class="btn btn-primary bg-primary p-5  mb-3" id="aula1">Aula 1 Css <br></a>
-            <a href = "Formulario.html" class="btn btn-success bg-primary p-5  mb-3" id="formula"> Formulários Novos Inputs </a> 
-            <a href = "Formulario.html" class="btn btn-success" id="formula"> Formulario adad </a> 
-            <a href = "Formulario.html" class="btn btn-success" id="formula"> Formulario adad </a> 
-            <a href = "Formulario.html" class="btn btn-success" id="formula"> Formulario adad </a> 
-            <a href = "Formulario.html" class="btn btn-success" id="formula"> Formulario adad </a> 
-            <a href = "Formulario.html" class="btn btn-success" id="formula"> Formulario adad </a> 
+            Atividades Avaliativas:
+        <div class="container tarefas"> 
+            <div class="row">                       
+            <a href = "curriculum/index.html" class="btn btn-success col-sm formula" > Atividade avaliativa Curriculum Vitae</a> 
+            <a href = "Formulario.html" class="btn btn-success formula col-sm"> Atividade avaliativa de Formulários </a> 
+            </div>
+            <div class="row"> 
+                <a href="Atividade Prática avaliativa (20 pontos)/index.html " class="btn btn-primary bg-primary p-5  mb-3 col-sm">Atividade Prática avaliativa (20 pontos)<br></a>
+                <a href = "Formulario.html" class="btn btn-success bg-primary col-sm formula">atividade avaliativa Layouts</a>                 
+            </div>
+            <div class="row"> 
+            <a href = "Formulario.html" class="btn btn-success col-sm formula" style="background-image: url('imagens/codigo.gif');"><div class="imagem"> Atividade Prática Avaliativa JavaScript1 </div></a> 
+            <a href = "Formulario.html" class="btn btn-success col-sm formula"> Atividade prática avaliativa (40 pontos - Média ponderada)</a>             
+            <a href = "Formulario.html" class="btn btn-success col-sm formula"> Atividade Prática Avaliativa JavaScript3</a>
+            </div>
         </div>
                 <a href="https://www.linkedin.com/in/wanderson-soares-235ba819a/" target="_blank">
                         <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/linkedin_logo_icon_147268.png" style="height:64px; position:fixed; bottom: 225px; right:25px; z-index:99999;"
-                        data-selector="img"></a> 
+                        data-selector="img" class="imagem"></a> 
                 <a href="https://github.com/wand-CE" target="_blank">
                         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="background-color: white; border-radius: 100px; height:64px; position:fixed; bottom: 175px; right: 25px; z-index:99999;"
-                        data-selector="img"></a> 
+                        data-selector="img" class="imagem"></a> 
                 <a href="https://api.whatsapp.com/send?l=pt&amp;phone=69993908500" target="_blank">
                     <img src="https://i.imgur.com/ryESuZ5.png" style="height:64px; position:fixed; bottom: 125px; right: 25px; z-index:99999;" 
-                    data-selector="img"></a>   
+                    data-selector="img" class="imagem"></a>   
                   
                 <a href="https://www.instagram.com/wandersonsst/" target="_blank">
                     <img src="https://i.imgur.com/M6yBwxS.png" style="border-radius: 100px; height:64px; position:fixed; bottom: 75px; right: 25px; z-index:99999;"
-                    data-selector="img"></a>   
+                    data-selector="img" class="imagem"></a>   
                   
                 <a href="https://www.facebook.com/wanderson.soaresdossantos.31" target="_blank">
                     <img src="https://i.imgur.com/2rmocdK.png" style="height:64px; position:fixed; bottom: 25px; right: 25px; z-index:99999;"
-                    data-selector="img"></a> 
+                    data-selector="img" class="imagem"></a> 
         </div>
     </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
