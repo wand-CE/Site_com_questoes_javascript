@@ -9,7 +9,8 @@
        <style>
         body{
             padding: 30px;
-            background-image: url('imagens/codigo.gif');                        
+            background-image: url('imagens/codigo.gif');                       
+
             color: white;
         }
         #eu{       
@@ -30,11 +31,24 @@
         .imagem{
             transition: all 0.5s;            
             cursor: pointer;
-            object-fit: cover; 
+            object-fit: contain; 
+            background-size: cover;
+            width: 50%; 
+            max-height: 100%;
+            border-radius: 30px;
+        }
+        .imagem:hover{
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+        .imagem2{
+            transition: all 0.5s;            
+            cursor: pointer;
+            object-fit: contain; 
             background-size: cover;
         }
 
-        .imagem:hover{
+        .imagem2:hover{
             -webkit-transform: scale(1.5);
             transform: scale(1.5);
         }
@@ -49,6 +63,9 @@
         .container{
             gap: 10px;
         }
+        div{
+            border-radius: 30px;
+        }
         .titulo{
             display: none;
             position: absolute;
@@ -59,6 +76,19 @@
             color: rgb(255, 255, 255);
             background-color: rgba(0, 0, 0, 0.452);
         }
+        @media only screen and (max-width: 600px) {
+         .imagem{
+                transition: all 0.5s;            
+                cursor: pointer;
+                background-size: cover;
+                max-width: 100%; 
+                max-height: 100%;
+            }
+        }
+        img{
+            height: 300px;
+        }
+
         
     </style>
 </head>
@@ -76,44 +106,56 @@
         </div>
             <div class="container p-5 bg-secondary mt-3 text-left ">
                 <h3 style="color: rgb(148, 17, 17); text-decoration: underline;">Quem sou eu?</h3>
-                <p style="font-size: large;">Meu nome é Wanderson Soares dos Santos, estudo Análise e Desenvolvimento de Sistemas no IFRO - Campus Ariquemes, estou finalizando o 1º período</p>  
+                <p style="font-size: large;">Meu nome é Wanderson Soares dos Santos, tenho 19 anos, estudo no curso superior de Análise e Desenvolvimento de Sistemas no IFRO - Campus Ariquemes, e estou finalizando o 1º período.
+                    <br>Possuo o Ensino Médio completo, onde me formei através do IFRO - Campus Ariquemes, pelo curso integral de Manutenção e Suporte a Informática.
+                    Atualmente estou desempregado mas faço trabalhos autônomos na area de Informática, como por exemplo formatar computadores, trocar
+                    peças, arrumar algum dispositivo danificado, etc.
+                </p>
+                <p style="font-size: large;">
+                    Uma das coisas que mais gosto de fazer no horário livre é assistir a futebol, não importa o time, até por que o meu São Paulo da só tristeza.
+                </p>
+
+                <img src="imagens/info.png" alt="Meu-time">
+                <img src="imagens/sao-paulo.png" alt="Meu-time">
                 
             </div>
         <div class="container p-5 bg-secondary mt-3 text-left " style="font-size: xx-large;">
             <p class="text-center mb-5" style="color: rgb(148, 17, 17);">Atividades Avaliativas:</p>
         <div class="container"> 
             <div class="row tarefas">                       
-                <a href = "curriculum/index.html" class="btn btn-success col-sm formula imagem"  style="background-image: url('imagens/Curriculum.jpg'); "> <div class="titulo">Atividade avaliativa Curriculum Vitae</div></a> 
+                <a href = "curriculum/index.html" class="btn btn-success col-sm formula imagem"  style="background-image: url('imagens/Curriculum.jpg');"> <div class="titulo">Atividade avaliativa Curriculum Vitae</div></a> 
                 <a href = "Formulario.html" class="btn btn-success formula col-sm imagem" style="background-image: url('imagens/formu.png'); "> <div class="titulo">Atividade avaliativa de Formulários </div></a> 
             </div>
             <div class="row tarefas"> 
-                <a href="Atividade Prática avaliativa (20 pontos)/index.html " class="btn btn-primary bg-primary p-5  mb-3 col-sm imagem" style="background-image: url('imagens/Ativ20pontos.png'); "><div class="titulo">Atividade Prática avaliativa (20 pontos)</div></a>
-                <a href = "Formulario.html" class="btn btn-success col-sm formula  mb-3 imagem" style="background-image: url('imagens/javascript1.png');"><div class="titulo"> Atividade Prática Avaliativa JavaScript1 </div></a> 
+                <a href="AtividadePraticaavaliativa(20 pontos)/index.html" class="btn btn-primary mb-3 col-sm imagem formula p-5" style="background-image: url('imagens/Ativ20pontos.png'); "><div class="titulo">Atividade Prática avaliativa (20 pontos)</div></a>
+                <a href = "AtividadeAvaliativaJavascript1/index.html" class="btn btn-success col-sm formula  mb-3 imagem" style= "background-image: url('imagens/javascript1.png');"><div class="titulo"> Atividade Prática Avaliativa JavaScript1 </div></a> 
 
             </div>
             <div class="row tarefas"> 
-                <a href = "Formulario.html" class="btn btn-success bg-primary col-sm formula imagem" style="background-image: url('imagens/layouts.png'); "><div class="titulo">Atividade Avaliativa Layouts </div></a>                 
-                <a href = "Formulario.html" class="btn btn-success col-sm formula imagem" style="background-image: url('imagens/javascript2.png'); "> <div class="titulo">Atividade prática avaliativa (40 pontos - Média ponderada)</div></a>             
-                <a href = "Formulario.html" class="btn btn-success col-sm formula imagem" style="background-image: url('imagens/javascript3.png'); "> <div class="titulo">Atividade Prática Avaliativa JavaScript3</div></a>
+                <a href = "#" class="btn btn-success bg-primary col-sm formula imagem" style="background-image: url('imagens/layouts.png'); "><div class="titulo">Atividade Avaliativa Layouts </div></a>                 
+                <a href = "AtividadeAvaliativaJavascript2/index.html" class="btn btn-success col-sm formula imagem" style="background-image: url('imagens/javascript2.png'); "> <div class="titulo">Atividade prática avaliativa (40 pontos - Média ponderada)</div></a>             
+                <a href = "AtividadeAvaliativaJavascript3/index.html" class="btn btn-success col-sm formula imagem" style="background-image: url('imagens/javascript3.png'); "> <div class="titulo">Atividade Prática Avaliativa JavaScript3</div></a>
             </div>
         </div>
                 <a href="https://www.linkedin.com/in/wanderson-soares-235ba819a/" target="_blank">
                         <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/linkedin_logo_icon_147268.png" style="height:64px; position:fixed; bottom: 225px; right:25px; z-index:99999;"
-                        data-selector="img" class="imagem"></a> 
+                        data-selector="img" class="imagem2"></a> 
+
                 <a href="https://github.com/wand-CE" target="_blank">
-                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="background-color: white; border-radius: 100px; height:64px; position:fixed; bottom: 175px; right: 25px; z-index:99999;"
-                        data-selector="img" class="imagem"></a> 
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="background-color: rgb(255, 255, 255); border-radius: 100px; height:64px; position:fixed; bottom: 175px; right: 25px; z-index:99999;"
+                        data-selector="img" class="imagem2"></a> 
+
                 <a href="https://api.whatsapp.com/send?l=pt&amp;phone=69993908500" target="_blank">
                     <img src="https://i.imgur.com/ryESuZ5.png" style="height:64px; position:fixed; bottom: 125px; right: 25px; z-index:99999;" 
-                    data-selector="img" class="imagem"></a>   
-                  
+                    data-selector="img" class="imagem2"></a>   
+
                 <a href="https://www.instagram.com/wandersonsst/" target="_blank">
                     <img src="https://i.imgur.com/M6yBwxS.png" style="border-radius: 100px; height:64px; position:fixed; bottom: 75px; right: 25px; z-index:99999;"
-                    data-selector="img" class="imagem"></a>   
+                    data-selector="img" class="imagem2"></a>   
                   
                 <a href="https://www.facebook.com/wanderson.soaresdossantos.31" target="_blank">
                     <img src="https://i.imgur.com/2rmocdK.png" style="height:64px; position:fixed; bottom: 25px; right: 25px; z-index:99999;"
-                    data-selector="img" class="imagem"></a> 
+                    data-selector="img" class="imagem2"></a> 
         </div>
     </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
