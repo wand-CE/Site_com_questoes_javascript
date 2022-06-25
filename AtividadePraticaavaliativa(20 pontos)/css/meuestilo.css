@@ -16,7 +16,7 @@ body{
 header{
 	position: relative;
 	background-image: url("../imagens/TorreEiffel.png");
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: 36%;
 }
@@ -133,7 +133,9 @@ tbody tr td{
 	position: relative;
 	height:27%;
 	background-image: url("../imagens/paisagem.jpg");
-	background-size: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 36%;
 }
 
 #notebook div{
