@@ -21,16 +21,25 @@
         }
         .tarefas{
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+        .row{
             grid-gap: 30px;
+            column-gap: 30px;
+            margin-bottom: 10px;
         }
         .imagem{
             transition: all 0.5s;            
             cursor: pointer;
+            object-fit: cover; 
+            background-size: cover;
         }
 
         .imagem:hover{
             -webkit-transform: scale(1.5);
             transform: scale(1.5);
+        }
+        .imagem:hover .titulo{
+            display: block;
         }
         .formula{
             height: 200px;
@@ -40,13 +49,23 @@
         .container{
             gap: 10px;
         }
+        .titulo{
+            display: none;
+            position: absolute;
+            bottom: 0;
+            right: 0px;
+            width: 100%;
+            padding: 10px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0.452);
+        }
         
     </style>
 </head>
 <body>
     <div class="container p-5 bg-dark text-white text-center">
-        <div class="" id="titulo" >
-            <h1 class="text-center">Minha Página Pessoal</h1>
+        <div id="titulo" >
+            <h1 class="text-center" style="color: rgb(148, 17, 17);">Minha Página Pessoal</h1>
             <h3 style="padding-top: 0px;">Wanderson Soares dos Santos</h3>
         </div>
         <div id="perfil">
@@ -56,25 +75,26 @@
         </div>
         </div>
             <div class="container p-5 bg-secondary mt-3 text-left ">
-                <h3>Quem sou eu?</h3>
+                <h3 style="color: rgb(148, 17, 17); text-decoration: underline;">Quem sou eu?</h3>
                 <p style="font-size: large;">Meu nome é Wanderson Soares dos Santos, estudo Análise e Desenvolvimento de Sistemas no IFRO - Campus Ariquemes, estou finalizando o 1º período</p>  
                 
             </div>
         <div class="container p-5 bg-secondary mt-3 text-left " style="font-size: xx-large;">
-            Atividades Avaliativas:
-        <div class="container tarefas"> 
-            <div class="row">                       
-            <a href = "curriculum/index.html" class="btn btn-success col-sm formula" > Atividade avaliativa Curriculum Vitae</a> 
-            <a href = "Formulario.html" class="btn btn-success formula col-sm"> Atividade avaliativa de Formulários </a> 
+            <p class="text-center mb-5" style="color: rgb(148, 17, 17);">Atividades Avaliativas:</p>
+        <div class="container"> 
+            <div class="row tarefas">                       
+                <a href = "curriculum/index.html" class="btn btn-success col-sm formula imagem"  style="background-image: url('imagens/Curriculum.jpg'); "> <div class="titulo">Atividade avaliativa Curriculum Vitae</div></a> 
+                <a href = "Formulario.html" class="btn btn-success formula col-sm imagem" style="background-image: url('imagens/formu.png'); "> <div class="titulo">Atividade avaliativa de Formulários </div></a> 
             </div>
-            <div class="row"> 
-                <a href="Atividade Prática avaliativa (20 pontos)/index.html " class="btn btn-primary bg-primary p-5  mb-3 col-sm">Atividade Prática avaliativa (20 pontos)<br></a>
-                <a href = "Formulario.html" class="btn btn-success bg-primary col-sm formula">atividade avaliativa Layouts</a>                 
+            <div class="row tarefas"> 
+                <a href="Atividade Prática avaliativa (20 pontos)/index.html " class="btn btn-primary bg-primary p-5  mb-3 col-sm imagem" style="background-image: url('imagens/Ativ20pontos.png'); "><div class="titulo">Atividade Prática avaliativa (20 pontos)</div></a>
+                <a href = "Formulario.html" class="btn btn-success col-sm formula  mb-3 imagem" style="background-image: url('imagens/javascript1.png');"><div class="titulo"> Atividade Prática Avaliativa JavaScript1 </div></a> 
+
             </div>
-            <div class="row"> 
-            <a href = "Formulario.html" class="btn btn-success col-sm formula" style="background-image: url('imagens/codigo.gif');"><div class="imagem"> Atividade Prática Avaliativa JavaScript1 </div></a> 
-            <a href = "Formulario.html" class="btn btn-success col-sm formula"> Atividade prática avaliativa (40 pontos - Média ponderada)</a>             
-            <a href = "Formulario.html" class="btn btn-success col-sm formula"> Atividade Prática Avaliativa JavaScript3</a>
+            <div class="row tarefas"> 
+                <a href = "Formulario.html" class="btn btn-success bg-primary col-sm formula imagem" style="background-image: url('imagens/layouts.png'); "><div class="titulo">Atividade Avaliativa Layouts </div></a>                 
+                <a href = "Formulario.html" class="btn btn-success col-sm formula imagem" style="background-image: url('imagens/javascript2.png'); "> <div class="titulo">Atividade prática avaliativa (40 pontos - Média ponderada)</div></a>             
+                <a href = "Formulario.html" class="btn btn-success col-sm formula imagem" style="background-image: url('imagens/javascript3.png'); "> <div class="titulo">Atividade Prática Avaliativa JavaScript3</div></a>
             </div>
         </div>
                 <a href="https://www.linkedin.com/in/wanderson-soares-235ba819a/" target="_blank">
